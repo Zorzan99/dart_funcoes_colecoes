@@ -20,6 +20,11 @@ void main() {
   print('toSet()');
   print(numerosLista.toSet());
 
+  // ignore: avoid_function_literals_in_foreach_calls
+  numerosSet.forEach((numeroSet) {
+    print('Print do numeroSet $numeroSet');
+  });
+
   numerosSet.forEach(print);
 
   print('.difference()');
@@ -39,3 +44,14 @@ void main() {
   print('.lookup()');
   print(numeros1.lookup(1));
 }
+
+
+// Em Dart, um Set é uma coleção de objetos onde cada objeto pode aparecer no máximo uma vez.
+// Isso significa que um Set não permite elementos duplicados. 
+// A ordem dos elementos em um conjunto pode não ser previsível ou pode depender da implementação específica do Dart.
+// Para criar um conjunto em Dart, você pode usar a sintaxe de chaves {} ou a classe Set.
+
+// Já o termo "iterable" se refere a uma coleção de elementos que pode ser percorrida (iterada) sequencialmente.
+// Em Dart, muitos tipos de coleções são iteráveis, incluindo listas, conjuntos e mapas.
+// A classe Iterable é a interface implementada por essas coleções e fornece métodos para percorrer os elementos.
+// Por exemplo, ao usar o método forEach, você pode iterar sobre os elementos de um iterable.
