@@ -1,2 +1,1 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+Exemplo de muitas coisas usadas no dia a dia de um desenvolvedor dart.
